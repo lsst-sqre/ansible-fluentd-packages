@@ -1,0 +1,11 @@
+---
+# tasks file for fluentd
+
+- name: Stop the Fluentd (td-agent) service.
+  service: name=td-agent state=stopped
+  
+- include: redhat.yml
+  when: ansible_os_family == 'RedHat'
+
+- include: debian.yml
+  when: ansible_os_family == 'Debian'

@@ -1,0 +1,5 @@
+---
+# Configure the Fluentd (td-agent) service.
+
+- name: Start the Fluentd (td-agent) service.
+  service: name=td-agent state=started
