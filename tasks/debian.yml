@@ -2,10 +2,9 @@
 # Install fluentd packages on debian based distributions.
 
 - name: Add Fluentd (TreasureData) apt key.
-  apt_key: url=https://packages.treasuredata.com/GPG-KEY-td-agent state=present
-
-- name: Install apt-transport-https dependency.
-  apt: name=apt-transport-https update_cache=yes state=latest install_recommends=no
+  apt_key:
+    url: http://packages.treasuredata.com/GPG-KEY-td-agent
+    state: present
 
 - name: Add the Fluentd (TreasureData) repository.
   apt_repository: repo='deb http://packages.treasuredata.com/2/ubuntu/trusty/ trusty contrib' state=present
