@@ -1,5 +1,8 @@
 ---
-# Install fluentd packages on debian based distributions.
+# Install Fluentd (td-agent) packages on debian based distributions.
+
+- name: Uninstall existing Fluentd (td-agent) package.
+  apt: name=td-agent state=absent
 
 - name: Add Fluentd (TreasureData) apt key.
   apt_key:
