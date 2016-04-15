@@ -1,9 +1,6 @@
 ---
 # Install Fluentd (td-agent) packages on redhat base distributions.
 
-- name: Uninstall existing Fluentd (td-agent) package.
-  yum: name=td-agent state=absent
-
 - name: Add the Fluentd (TreasureData) repository.
   yum_repository:
     name: TreasureData-repository
