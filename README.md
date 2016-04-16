@@ -10,9 +10,9 @@ Example Playbook
 
     - hosts: server
       roles:
-         - { role: jmatt.fluentd }
+         - { role: jmatt.fluentd-packages }
 
 License
 -------
 
-See the [LICENSE file](/LICENSE).
+The MIT License. See the [LICENSE file](https://github.com/lsst-sqre/ansible-fluentd-packages/blob/master/LICENSE).
