@@ -1,0 +1,27 @@
+galaxy_info:
+  author: J. Matt Peterson
+  description: LSST SQuaRE's fluentd packages.
+  company: LSST SQuaRE
+  issue_tracker_url: https://github.com/lsst-sqre/ansible-fluentd-packages/issues
+  license: MIT
+  min_ansible_version: 2.1
+  platforms:
+  - name: EL
+    versions:
+      - 7
+  - name: Ubuntu
+    versions:
+      - trusty
+      - xenial
+  #- name: Debian
+  #  versions:
+  #  - all
+  #  - etch
+  #  - jessie
+  #  - lenny
+  #  - squeeze
+  #  - wheezy
+  galaxy_tags:
+    - system
+    - monitoring
+dependencies: []
