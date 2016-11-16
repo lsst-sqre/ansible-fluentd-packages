@@ -11,7 +11,6 @@ galaxy_info:
       - 7
   - name: Ubuntu
     versions:
-      - trusty
       - xenial
   #- name: Debian
   #  versions:
@@ -20,6 +19,7 @@ galaxy_info:
   #  - jessie
   #  - lenny
   #  - squeeze
+  #  - trusty
   #  - wheezy
   galaxy_tags:
     - system

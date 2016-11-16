@@ -7,7 +7,7 @@
     state: present
 
 - name: Add the Fluentd (TreasureData) repository.
-  apt_repository: repo='deb http://packages.treasuredata.com/2/ubuntu/trusty/ trusty contrib' state=present
+  apt_repository: repo='deb http://packages.treasuredata.com/2/ubuntu/xenial/ xenial contrib' state=present
 
 - name: Install Fluentd (td-agent) package.
   apt: name=td-agent update_cache=yes state=latest install_recommends=no
